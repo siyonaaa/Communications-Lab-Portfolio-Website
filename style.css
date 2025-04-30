@@ -12,7 +12,7 @@ body {
     width: 100vw;
     margin: 0;
     padding: 0;
-    overflow: hidden;    
+    /*overflow: hidden;*/    
 }
 
 /* Navigation bar styles */
@@ -84,7 +84,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px); /* Full viewport minus navbar height */
+    min-height: calc(100vh - 60px); /* Full viewport minus navbar height */
 }
 
 .home-image {
@@ -97,7 +97,7 @@ body {
 
 /* Corner navigation styles */
 .corner-nav {
-    position: fixed;
+    position: absolute;
     transition: all 0.3s ease;
     z-index: 10;
     margin: 5px;
@@ -208,7 +208,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px); /* Full viewport minus navbar height */
+    min-height: calc(100vh - 60px); /* Full viewport minus navbar height */
 }
 
 .about-image {
@@ -274,7 +274,7 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
     }
-    
+
     .corner-icon {
         width: 100px;
         height: 100px;
