@@ -541,9 +541,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-y: auto; /* Enable vertical scrolling on smaller screens */
-    }
+    /*body {
+        overflow-y: auto; 
+    }*/
     
     .nav-links {
         position: absolute;
