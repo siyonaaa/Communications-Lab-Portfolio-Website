@@ -1,0 +1,309 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d7f4ff;
+    padding: 15px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+.logo {
+    color: #112548;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #134399;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight: bold
+}
+
+.nav-links a:hover {
+    color: #112548;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Home container styles */
+.home-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px; /* Push content below fixed navbar */
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.home-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px); /* Full viewport minus navbar height */
+}
+
+.home-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; /* Removes any inline spacing */
+}
+
+/* Corner navigation styles */
+.corner-nav {
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: 10;
+    margin: 5px;
+}
+
+.top-left {
+    top: 80px;
+    left: 5px;
+}
+
+.top-right {
+    top: 70px;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: -75px;
+    left: 5px;
+}
+
+.bottom-right {
+    bottom: -79px;
+    right: 0;
+}
+
+.corner-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.corner-icon {
+    width: 300px; /* Much larger icons */
+    height: 300px;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+/* Hover effects for corner elements */
+/*.corner-nav:hover .corner-icon {
+    transform: scale(1.3);
+    transition: all 0.3s ease;
+}*/
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.corner-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.moving-fish {
+    position: absolute;
+    top: 32%; 
+    right: -150px; /* Start off-screen */
+    z-index: 15;
+    animation: swim-left 20s linear infinite;
+}
+
+.fish-icon {
+    width: 230px;
+    height: 230px;
+    object-fit: contain;
+    animation: fish-wiggle 0.8s ease-in-out infinite;
+}
+
+/* New keyframes to swim from right to left */
+@keyframes swim-left {
+    0% {
+        right: -150px; /* Start completely off screen on the right */
+    }
+    100% {
+        right: 110vw; /* Swim past the left edge, totally out */
+    }
+}
+
+@keyframes fish-wiggle {
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(5deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform:rotate(-5deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+
+.about-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px); /* Full viewport minus navbar height */
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block; /* Removes any inline spacing */
+}
+
+/* Responsive design */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 70%;
+    }
+    
+    .corner-icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        padding-top: 20px;
+    }
+    
+    .nav-links li {
+        opacity: 0;
+        margin: 20px 0;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .corner-icon {
+        width: 70px;
+        height: 70px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .corner-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .nav-links {
+        width: 70%;
+    }
+}
+
+/* Class for mobile navigation */
+.nav-active {
+    transform: translateX(0%);
+}
+
+/* Animation for navbar links */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Burger animation classes */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
