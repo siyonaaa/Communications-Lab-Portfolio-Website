@@ -104,22 +104,22 @@ body {
 }
 
 .top-left {
-    top: 80px;
+    top: 30px;
     left: 5px;
 }
 
 .top-right {
-    top: 70px;
+    top: 20px;
     right: 0;
 }
 
 .bottom-left {
-    bottom: -75px;
+    bottom: 0px;
     left: 5px;
 }
 
 .bottom-right {
-    bottom: -79px;
+    bottom: 0px;
     right: 0;
 }
 
