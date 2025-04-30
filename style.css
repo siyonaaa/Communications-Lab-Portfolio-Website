@@ -429,12 +429,12 @@ body {
 }
 
 .bottom-left {
-    bottom: 0px;
+    bottom: -50px;
     left: 5px;
 }
 
 .bottom-right {
-    bottom: 0px;
+    bottom: -50px;
     right: 0;
 }
 
