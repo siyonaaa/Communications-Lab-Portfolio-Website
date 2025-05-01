@@ -694,7 +694,7 @@ body {
     }
 
     .about-text {
-        top: 50%;
+        top: 20%;
         max-width: 90%;
     }
 }
