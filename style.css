@@ -553,6 +553,31 @@ body {
     display: block; /* Removes any inline spacing */
 }
 
+.about-text {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    max-width: 80%;
+}
+
+.about-heading {
+    font-family: 'Finger Paint', cursive;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.about-description {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+
 /* Responsive design */
 @media screen and (max-width: 1024px) {
     .nav-links {
@@ -611,6 +636,14 @@ body {
     .sub-heading {
         font-size: 1.8rem;
     }
+
+    .about-heading {
+        font-size: 2.5rem;
+    }
+
+    .about-description {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -650,6 +683,19 @@ body {
 
     .home-text {
         top: 45%; /* Move text slightly lower for better spacing */
+    }
+
+    .about-heading {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        top: 50%;
+        max-width: 90%;
     }
 }
 
