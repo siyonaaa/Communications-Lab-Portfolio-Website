@@ -71,7 +71,7 @@ body {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: #134399;
     margin: 5px;
     transition: all 0.3s ease;
 }
