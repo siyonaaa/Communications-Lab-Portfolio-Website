@@ -35,9 +35,13 @@ body {
 .logo {
     font-family: 'Cinzel', serif;
     text-decoration: none;
-    color: #112548;
+    color: #134399;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.logo:hover {
+    color: #112548;
 }
 
 .nav-links {
