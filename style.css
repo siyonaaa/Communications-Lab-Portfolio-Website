@@ -451,6 +451,134 @@ body {
     padding: 0 15px;
 }
 
+/* Contact page styles */
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 60px; /* Push content below fixed navbar */
+    background-image: url('media/contact_bg.png'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    overflow-y: auto;
+}
+
+/* Form container styles */
+.contact-form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    width: 45%;
+    max-width: 500px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+}
+
+.contact-form-container h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    color: #112548;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #134399;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #112548;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #134399;
+}
+
+/* Contact info styles */
+.contact-info-container {
+    width: 45%;
+    max-width: 500px;
+    color: white;
+    text-align: left;
+    margin-left: -60px;
+}
+
+.contact-info-container h1 {
+    font-family: 'Finger Paint', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    flex-direction: row;
+}
+
+.contact-icon {
+    font-size: 2.2rem;
+}
+
+.contact-text {
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);   
+}
+
+.contact-text a {
+    color: inherit; /* Makes links inherit the text color from parent */
+    text-decoration: none; /* Removes the underline */
+}
+
+.contact-text a:hover {
+    opacity: 0.8; /* Optional: slight fade effect on hover */
+}
+
 /* Responsive design */
 @media screen and (max-width: 1024px) {
     .nav-links {
@@ -481,6 +609,18 @@ body {
     
     .experience-description {
         font-size: 1.1rem;
+    }
+
+    .contact-form-container {
+        width: 48%;
+    }
+    
+    .contact-info-container {
+        width: 48%;
+    }
+    
+    .contact-info-container h1 {
+        font-size: 3rem;
     }
 }
 
@@ -570,6 +710,35 @@ body {
     
     .experience-heading {
         font-size: 2.8rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 40px 5%;
+        height: auto;
+        min-height: calc(100vh - 60px);
+    }
+    
+    .contact-form-container {
+        width: 90%;
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
+    
+    .contact-info-container {
+        width: 90%;
+        max-width: 500px;
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .contact-info {
+        align-items: center;
+    }
+    
+    .contact-info-container h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
     }
 }
 
@@ -676,6 +845,37 @@ body {
     
     .experience-heading {
         font-size: 2.2rem;
+    }
+
+    .contact-container {
+        padding: 30px 15px;
+    }
+    
+    .contact-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .contact-info-container {
+        width: 100%;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+    
+    .contact-info-container h1 {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+    
+    .contact-item {
+        font-size: 1rem;
+    }
+    
+    .contact-icon {
+        font-size: 1.3rem;
     }
 }
 

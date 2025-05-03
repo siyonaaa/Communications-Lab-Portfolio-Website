@@ -47,3 +47,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// This script handles form validation and submission feedback
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            // Basic validation can be added here if needed
+            
+            // Show loading state on button when form is submitted
+            const submitBtn = this.querySelector('.submit-btn');
+            submitBtn.innerHTML = 'Sending...';
+            submitBtn.style.opacity = '0.7';
+            
+            // Form submission is handled by Formspree
+            // This will execute after form submission to Formspree
+            setTimeout(function() {
+                // Reset button after submission (whether success or failure)
+                // Formspree will handle the actual redirect/response
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.style.opacity = '1';
+            }, 3000);
+        });
+    }
+});
