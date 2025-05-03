@@ -648,18 +648,18 @@ body {
     .bubbles-container {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 40px;
     }
     
     .bubble-section {
-        width: 90%;
+        width: 100%;
         max-width: 300px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     
     .bubble {
-        width: 150px;
-        height: 150px;
+        width: 210px;
+        height: 210px;
     }
     
     .bubble-title {
