@@ -625,10 +625,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    /*body {
-        overflow-y: auto; 
-    }*/
-    
+        
     .nav-links {
         position: absolute;
         right: 0px;
@@ -648,6 +645,14 @@ body {
         opacity: 0;
         margin: 20px 0;
     }
+
+    .nav-links a {
+        color: white;
+    }
+    
+    .nav-links a:hover {
+        color: #ccc;
+    }    
     
     .burger {
         display: block;
