@@ -770,16 +770,16 @@ body {
     }
     
     .fish-icon {
-        width: 110px;
-        height: 110px;
+        width: 150px;
+        height: 150px;
     }
 
     .main-heading {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 
     .sub-heading {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .home-text {
