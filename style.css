@@ -761,8 +761,8 @@ body {
     }
     
     .corner-icon {
-        width: 110px;
-        height: 110px;
+        width: 150px;
+        height: 150px;
     }
     
     .nav-links {
@@ -775,11 +775,11 @@ body {
     }
 
     .main-heading {
-        font-size: 2.0rem;
+        font-size: 2.2rem;
     }
 
     .sub-heading {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .home-text {
