@@ -33,7 +33,7 @@ body {
 }
 
 .logo {
-    font-family: 'Cinzel', serif;
+    font-family: "Rambla", sans-serif;
     text-decoration: none;
     color: #134399;
     font-size: 1.5rem;
@@ -220,7 +220,7 @@ body {
 }
 
 .sub-heading {
-    font-family: 'Cinzel', serif;
+    font-family: "Rambla", sans-serif;
     font-size: 3rem;
     margin-top: 1rem;
 }
