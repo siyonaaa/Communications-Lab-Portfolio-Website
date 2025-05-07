@@ -36,7 +36,7 @@ window.addEventListener('resize', () => {
     // This can be used for additional responsive adjustments if needed
 });
 
-// Optional - Add smooth scrolling for page navigation if desired
+// Add smooth scrolling for page navigation if desired
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
