@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
+
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title of the page shown in browser tabs -->
     <title>Dive In!</title>
+
+    <!-- Links to the external CSS stylesheet for styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Multiple fonts are included for various text styling options -->
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Finger+Paint&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Header section containing the website navigation bar -->
     <header>
         <nav class="navbar">
+            <!-- Website logo (also a clickable link to home page) -->
             <a href="index.html" class="logo">Siyona Goel</a>
+
+            <!-- Navigation menu links -->
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="webprojects.html">Web Projects</a></li>
-                <li><a href="compsci.html">Computer Science</a></li>                
-                <li><a href="contact.html">Contact</a></li>                
+                <li><a href="compsci.html">Computer Science</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+
+            <!-- Hamburger menu for mobile or smaller screens -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -27,44 +44,48 @@
             </div>
         </nav>
     </header>
-    
+
+    <!-- Main content of the home page -->
     <main class="home-container">
         <div class="home-image-container">
+            <!-- Background image for the home section -->
             <img src="media/home_page.png" alt="Home Page Background" class="home-image">
+
+            <!-- Overlay text displayed on top of the background image -->
             <div class="home-text">
                 <h1 class="main-heading">Dive into<br>my portfolio!</h1>
                 <p class="sub-heading">Siyona Goel</p>
-            </div>            
-            
-            <!-- Corner navigation elements -->
+            </div>
+
+            <!-- Top-left corner icon linking to contact page -->
             <div class="corner-nav top-left" id="jellyfish-container">
                 <a href="contact.html" class="corner-link">
                     <img src="media/jellyfish.png" alt="Jellyfish" class="corner-icon">
-                    
                 </a>
             </div>
-            
+
+            <!-- Top-right corner icon linking to experience page -->
             <div class="corner-nav top-right" id="whale-container">
                 <a href="experience.html" class="corner-link">
                     <img src="media/whale.png" alt="Whale" class="corner-icon">
-                    
                 </a>
             </div>
-            
+
+            <!-- Bottom-left corner icon linking to web projects -->
             <div class="corner-nav bottom-left" id="bottle-container">
                 <a href="webprojects.html" class="corner-link">
                     <img src="media/bottle.png" alt="Bottle" class="corner-icon">
-                    
                 </a>
             </div>
-            
+
+            <!-- Bottom-right corner icon linking to computer science section -->
             <div class="corner-nav bottom-right" id="anchor-container">
                 <a href="compsci.html" class="corner-link">
                     <img src="media/anchor.png" alt="Anchor" class="corner-icon">
-                    
                 </a>
             </div>
-            
+
+            <!-- Floating/moving fish icon linking to the about page -->
             <div class="moving-fish" id="fish-container">
                 <a href="about.html" class="corner-link">
                     <img src="media/fish.png" alt="Fish" class="fish-icon">
@@ -73,6 +94,7 @@
         </div>
     </main>
 
+    <!-- JavaScript file inclusion for interactive behavior (e.g. responsive nav menu) -->
     <script src="script.js"></script>
 </body>
 </html>

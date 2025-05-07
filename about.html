@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Character encoding for proper display of text content -->
     <meta charset="UTF-8">
+
+    <!-- Viewport settings for responsive design on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage shown in the browser tab -->
     <title>About Me!</title>
+
+    <!-- External CSS stylesheet to style the page -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts for enhanced typography -->
+    <!-- 'Finger Paint', 'Poltawski Nowy', and 'Poppins' fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Additional Google Fonts including 'Cinzel' and 'Rambla' -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Finger+Paint&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!-- Header section with navigation bar -->
     <header>
         <nav class="navbar">
+            <!-- Website logo, also functions as a home link -->
             <a href="index.html" class="logo">Siyona Goel</a>
+
+            <!-- Navigation links to different sections of the portfolio -->
             <ul class="nav-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Experience</a></li>
@@ -20,6 +38,8 @@
                 <li><a href="compsci.html">Computer Science</a></li>                
                 <li><a href="contact.html">Contact</a></li>                
             </ul>
+
+            <!-- Hamburger menu icon (lines) for mobile-friendly design -->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -28,9 +48,14 @@
         </nav>
     </header>
 
+    <!-- Main section of the About page -->
     <main class="home-container">
+        <!-- Container for the About page image and text -->
         <div class="about-image-container">
-            <img src="media/about_page.png" alt="Home Page Background" class="about-image">       
+            <!-- Background image related to the About page -->
+            <img src="media/about_page.png" alt="Home Page Background" class="about-image">
+
+            <!-- Text content describing Siyona -->
             <div class="about-text">
                 <h1 class="about-heading">About Me</h1>
                 <p class="about-description">
@@ -39,8 +64,12 @@
                     passionate about arts, technology and ocean<br>
                     sustainability!
                 </p>
-            </div>            
+            </div>
+        </div>
+    </main>
 
+    <!-- External JavaScript file for interactivity (like mobile nav toggle) -->
     <script src="script.js"></script>
 </body>
+
 </html>
