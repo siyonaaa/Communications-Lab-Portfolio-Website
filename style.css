@@ -1,13 +1,16 @@
+/* Reset default browser styles for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Ensure html element fills the whole height of the viewport */
 html {
     height: 100%;
 }
 
+/* Base body styling */
 body {
     font-family: 'Arial', sans-serif;
     overflow-x: hidden;
@@ -32,6 +35,7 @@ body {
     height: 60px;
 }
 
+/* Logo link styling */
 .logo {
     font-family: "Rambla", sans-serif;
     text-decoration: none;
@@ -40,10 +44,12 @@ body {
     font-weight: bold;
 }
 
+/* Logo hover effect */
 .logo:hover {
     color: #112548;
 }
 
+/* Navigation links container */
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -51,6 +57,7 @@ body {
     list-style: none;
 }
 
+/* Individual nav link styling */
 .nav-links a {
     color: #134399;
     text-decoration: none;
@@ -59,15 +66,18 @@ body {
     font-weight: bold
 }
 
+/* Hover effect for nav links */
 .nav-links a:hover {
     color: #112548;
 }
 
+/* Hamburger menu (for mobile - hidden by default) */
 .burger {
     display: none;
     cursor: pointer;
 }
 
+/* Each line of the hamburger icon */
 .burger div {
     width: 25px;
     height: 3px;
@@ -85,6 +95,7 @@ body {
     overflow: hidden;
 }
 
+/* Container for home image */
 .home-image-container {
     position: absolute;
     top: 0;
@@ -93,6 +104,7 @@ body {
     height: 100%;
 }
 
+/* Main home image styling */
 .home-image {
     width: 100%;
     height: 100%;
@@ -109,26 +121,31 @@ body {
     margin: 5px;
 }
 
+/* Position for top-left corner nav */
 .top-left {
     top: 20px;
     left: 5px;
 }
 
+/* Position for top-right corner nav */
 .top-right {
     top: 10px;
     right: 0;
 }
 
+/* Position for bottom-left corner nav */
 .bottom-left {
     bottom: -10px;
     left: 5px;
 }
 
+/* Position for bottom-right corner nav */
 .bottom-right {
     bottom: -10px;
     right: 0;
 }
 
+/* Anchor link styling inside corner navs */
 .corner-link {
     display: flex;
     align-items: center;
@@ -136,30 +153,34 @@ body {
     color: white;
 }
 
+/* Corner icon images (e.g., fish, bottle, jellyfish) */
 .corner-icon {
-    width: 300px; /* Much larger icons */
+    width: 300px; 
     height: 300px;
     object-fit: contain;
     transition: all 0.3s ease;
     transform: scale(1);
 }
 
+/* === Floating Animation for Fish or Icons === */
 @keyframes float {
     0% {
         transform: translateY(0px);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-10px);   /* Float up slightly */
     }
     100% {
-        transform: translateY(0px);
+        transform: translateY(0px);  /* Return to original position */
     }
 }
 
+/* === Floating Animation for Corner Icons === */
 .corner-icon {
     animation: float 3s ease-in-out infinite;
 }
 
+/* === Fish Animation: Moves a fish image across the screen === */
 .moving-fish {
     position: absolute;
     top: 32%; 
@@ -168,6 +189,7 @@ body {
     animation: swim-left 20s linear infinite;
 }
 
+/* Fish image styling */
 .fish-icon {
     width: 230px;
     height: 230px;
@@ -185,6 +207,7 @@ body {
     }
 }
 
+/* Keyframes for wiggling fish animation */
 @keyframes fish-wiggle {
     0% {
         transform:rotate(0deg);
@@ -203,6 +226,7 @@ body {
     }
 }
 
+/* === Text overlay for Home Section === */
 .home-text {
     position: absolute;
     top: 50%;
@@ -213,19 +237,23 @@ body {
     z-index: 2;
 }
 
+/* Main heading style on homepage */
 .main-heading {
     font-family: 'Finger Paint', cursive;
     font-size: 4.5rem;
     margin: 0;
 }
 
+/* Subheading under the main title */
 .sub-heading {
     font-family: "Rambla", sans-serif;
     font-size: 3.5rem;
     margin-top: 1rem;
 }
 
+/* === About Section === */
 
+/* Background image container for About section */
 .about-image-container {
     position: absolute;
     top: 0;
@@ -234,6 +262,7 @@ body {
     height: 100%;
 }
 
+/* Full-cover background image */
 .about-image {
     width: 100%;
     height: 100%;
@@ -242,6 +271,7 @@ body {
     display: block; /* Removes any inline spacing */
 }
 
+/* Text overlay for About section */
 .about-text {
     position: absolute;
     top: 27%;
@@ -253,18 +283,22 @@ body {
     max-width: 80%;
 }
 
+/* About section heading */
 .about-heading {
     font-family: 'Finger Paint', cursive;
     font-size: 3.5rem;
     margin: 0;
 }
 
+/* Paragraph description under About heading */
 .about-description {
     font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
     line-height: 1.8;
     margin-top: 1rem;
 }
+
+/* === Projects Section === */
 
 /* Projects container styles */
 .container {
@@ -278,6 +312,7 @@ body {
     background-position: center;
 }
 
+/* Alternate themed container (Computer Science) */
 .compscicontainer {
     position: relative;
     width: 100%;
@@ -289,17 +324,20 @@ body {
     background-position: center;
 }
 
+/* Container for text and cards in projects section */
 .projects-container {
     width: 100%;
     padding: 30px 5%;
 }
 
+/* Centered text above projects */
 .projects-text {
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
 
+/* Heading for projects section */
 .projects-heading {
     font-family: 'Finger Paint', cursive;
     font-size: 3.5rem;
@@ -315,6 +353,7 @@ body {
     gap: 30px;
 }
 
+/* Individual project card styling */
 .project-card {
     width: 400px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -324,22 +363,26 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for card: lift and deepen shadow */
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Remove underline and style text in link */
 .project-card a {
     text-decoration: none;
     color: #112548;
 }
 
+/* Container for preview image */
 .project-preview {
     width: 100%;
     height: 240px;
     overflow: hidden;
 }
 
+/* Image inside project card */
 .project-preview img {
     width: 100%;
     height: 100%;
@@ -347,10 +390,12 @@ body {
     transition: transform 0.3s ease;
 }
 
+/* Zoom effect on image when card is hovered */
 .project-card:hover .project-preview img {
     transform: scale(1.05);
 }
 
+/* Title below project image */
 .project-title {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -358,6 +403,8 @@ body {
     font-size: 1.2rem;
     margin: 0;
 }
+
+/* === Experience Section === */
 
 .experience-container {
     position: relative;
@@ -371,12 +418,14 @@ body {
     padding: 30px 5%;
 }
 
+/* Centered header text in experience section */
 .experience-text {
     text-align: center;
     color: white;
     margin-bottom: 50px;
 }
 
+/* Heading style for experience section */
 .experience-heading {
     font-family: 'Finger Paint', cursive;
     font-size: 3.5rem;
@@ -384,6 +433,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Layout for multiple bubble sections */
 .bubbles-container {
     display: flex;
     justify-content: center;
@@ -394,6 +444,7 @@ body {
     margin: 0 auto;
 }
 
+/* Individual experience bubble container */
 .bubble-section {
     display: flex;
     flex-direction: column;
@@ -403,6 +454,7 @@ body {
     position: relative;
 }
 
+/* Circle image and interaction */
 .bubble {
     width: 330px;
     height: 330px;
@@ -415,10 +467,12 @@ body {
     align-items: center;
 }
 
+/* Zoom on hover */
 .bubble:hover {
     transform: scale(1.1);
 }
 
+/* Bubble image (background shape) */
 .bubble-image {
     width: 100%;
     height: 100%;
@@ -427,6 +481,7 @@ body {
     z-index: 1;
 }
 
+/* Title text overlay on bubble */
 .bubble-title {
     font-family: 'Arial', sans-serif;
     font-size: 1.7rem;
@@ -438,6 +493,7 @@ body {
     position: relative;
 }
 
+/* Description text below the title */
 .experience-description {
     font-family: 'Arial', sans-serif;
     font-size: 1.3rem;
@@ -451,12 +507,15 @@ body {
     padding: 0 15px;
 }
 
+/* === Contact Form Section === */
+
 /* Contact page styles */
 .contact-container {
     position: relative;
     width: 100%;
-    height: calc(100vh - 60px);
-    margin-top: 60px; /* Push content below fixed navbar */
+    min-height: calc(100vh - 60px);
+    height: auto;
+    margin-top: 60px;                              /* Push content below fixed navbar */
     background-image: url('media/contact_bg.png'); /* Add your background image here */
     background-size: cover;
     background-position: center;
@@ -478,6 +537,7 @@ body {
     margin-left: 50px;
 }
 
+/* Heading for the contact form */
 .contact-form-container h2 {
     font-family: 'Arial', sans-serif;
     font-size: 2rem;
@@ -485,12 +545,14 @@ body {
     margin-bottom: 20px;
 }
 
+/* Layout for the form itself */
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+/* Shared styles for inputs and textarea */
 .contact-form input,
 .contact-form textarea {
     padding: 12px 15px;
@@ -502,17 +564,20 @@ body {
     transition: border-color 0.3s;
 }
 
+/* Focus styles for form fields */
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
     border-color: #134399;
 }
 
+/* Allow resizing of textarea */
 .contact-form textarea {
     resize: vertical;
     min-height: 100px;
 }
 
+/* === Submit Button === */
 .submit-btn {
     background-color: #112548;
     color: white;
@@ -526,6 +591,7 @@ body {
     transition: background-color 0.3s;
 }
 
+/* Hover effect for submit button */
 .submit-btn:hover {
     background-color: #134399;
 }
@@ -539,6 +605,7 @@ body {
     margin-left: -60px;
 }
 
+/* Title for contact section */
 .contact-info-container h1 {
     font-family: 'Finger Paint', cursive;
     font-size: 3.5rem;
@@ -546,6 +613,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Layout for the contact detail list */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -553,6 +621,7 @@ body {
     align-items: flex-start;
 }
 
+/* Each individual item (phone, email, etc.) */
 .contact-item {
     display: flex;
     align-items: center;
@@ -561,25 +630,31 @@ body {
     flex-direction: row;
 }
 
+/* Icon beside contact text */
 .contact-icon {
     font-size: 2.2rem;
 }
 
+/* Contact text and links */
 .contact-text {
     font-family: 'Arial', sans-serif;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);   
 }
 
+/* Link inside contact text */
 .contact-text a {
-    color: inherit; /* Makes links inherit the text color from parent */
+    color: inherit;        /* Makes links inherit the text color from parent */
     text-decoration: none; /* Removes the underline */
 }
 
+/* Link hover effect */
 .contact-text a:hover {
-    opacity: 0.8; /* Optional: slight fade effect on hover */
+    opacity: 0.8;           /* Optional: slight fade effect on hover */
 }
 
 /* Responsive design */
+
+/* ----------- Medium Devices (≤ 1024px) ----------- */
 @media screen and (max-width: 1024px) {
     .nav-links {
         width: 70%;
@@ -624,6 +699,7 @@ body {
     }
 }
 
+/* ----------- Tablets and Small Laptops (≤ 768px) ----------- */
 @media screen and (max-width: 768px) {
         
     .nav-links {
@@ -747,6 +823,7 @@ body {
     }
 }
 
+/* ----------- Phones and Small Screens (≤ 480px) ----------- */
 @media screen and (max-width: 480px) {
     body {
         overflow-y: auto; /* Ensure vertical scrolling is enabled on mobile */
@@ -901,7 +978,7 @@ body {
     }
 }
 
-/* Burger animation classes */
+/* Burger icon animation when toggled */
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
